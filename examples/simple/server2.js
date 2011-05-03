@@ -3,7 +3,6 @@ var util = require("util"),
 Monitaur = require("../../lib/monitaur");
 	
 var monitaur = new Monitaur({
-	server: { port: 8001 },
 	client: { port: 8001 }
 });
 
