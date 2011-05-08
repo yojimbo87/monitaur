@@ -1,1 +1,8 @@
-body { background: white; font-family: Verdana, Arial; font-size: 10px; margin: 20px; padding: 0; }
+body { background: white; font-family: Verdana, Arial; font-size: 10px; margin: 0 16px; padding: 0; }
+
+.client { overflow: hidden; padding: 8px 0; width: 100%; }
+.client .left { background: #bedbed; display: block; float: left; height: 100px; margin: 0 8px; width: 150px; }
+.client .middle { background: #f3f3f3; display: block; height: 100px; overflow: hidden; text-align: left; }
+.client .right { background: #e0dfdf; display: block; float: left; height: 100px; margin: 0 8px 0 0; width: 150px; }
+
+.graph { float: left; }
