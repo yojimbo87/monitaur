@@ -5,7 +5,7 @@ Monitaur = require("../../lib/monitaur");
 var monitaur = new Monitaur({
 	socketServer: { port: 8001 },
 	httpServer : { port: 8080 },
-	client: { port: 8001 }
+	client: { port: 8001, name: "Main app" }
 });
 
 
