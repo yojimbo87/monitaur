@@ -9,27 +9,95 @@
     <body>
         <div id="container">
 			<script id="tmpl-client" type="text/x-jquery-tmpl">
-				<div class="client">
-					<div class="left">
-						aaa
+				<div id="${id}" class="client">
+					<div class="overview">
 					</div>
 					
-					<div class="middle">
-						<div class="right">
-							aaa
+					<div class="collection">
+						<div class="partial cpu">
+							<div class="info">cpu</div>
+							<div class="graph">graph</div>
 						</div>
-						<div class="graph">
-							aaa
+						<div class="partial mem">
+							<div class="info"></div>
+							<div class="graph">graph</div>
 						</div>
 					</div>
 				</div>
 			</script>
+			
+			<script id="tmpl-overview" type="text/x-jquery-tmpl">
+				<div class="name">${name}</div>
+				<table class="hash">
+					<tr>
+						<td class="key">PID:</td>
+						<td class="value">${pid}</td>
+					</tr>
+					<tr>
+						<td class="key">Node version:</td>
+						<td class="value">${version}</td>
+					</tr>
+					<tr>
+						<td class="key">Platform:</td>
+						<td class="value">${platform}</td>
+					</tr>
+					<tr>
+						<td class="key">OS type:</td>
+						<td class="value">${osType}</td>
+					</tr>
+					<tr>
+						<td class="key" colspan="2">Release:</td>
+					</tr>
+					<tr>
+						<td class="fullvalue" colspan="2">${release}</td>
+					</tr>
+					<tr>
+						<td class="key" colspan="2">Hostname:</td>
+					</tr>
+					<tr>
+						<td class="fullvalue" colspan="2">${hostname}</td>
+					</tr>
+				</table>
+			</script>
+			
+			<script id="tmpl-info-mem" type="text/x-jquery-tmpl">
+				<div class="name">Memory</div>
+				<table class="hash">
+					<tr>
+						<td class="key">Total:</td>
+						<td class="value">${totalMem}</td>
+					</tr>
+					<tr>
+						<td class="key">Free:</td>
+						<td class="value">${freeMem}</td>
+					</tr>
+					<tr>
+						<td class="key">Resident size:</td>
+						<td class="value">${rss}</td>
+					</tr>
+					<tr>
+						<td class="key">Virtual:</td>
+						<td class="value">${vsize}</td>
+					</tr>
+					<tr>
+						<td class="key">Heap total:</td>
+						<td class="value">${heapTotal}</td>
+					</tr>
+					<tr>
+						<td class="key">Heap used:</td>
+						<td class="value">${heapUsed}</td>
+					</tr>
+				</table>
+			</script>
+			
+			<div id="placeholder"></div>
 		
 			<div id="debug"></div>
 		</div>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
 		<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
+		<script src="/jquery.flot.min.js" type="text/javascript"></script>
 		<script src="/client.js" type="text/javascript"></script>
     </body>
 </html>

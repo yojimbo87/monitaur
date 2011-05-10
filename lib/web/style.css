@@ -1,8 +1,19 @@
-body { background: white; font-family: Verdana, Arial; font-size: 10px; margin: 0 16px; padding: 0; }
+body { background: white; font-family: Verdana, Arial; font-size: 10px; margin: 8px 16px; padding: 0; }
 
 .client { overflow: hidden; padding: 8px 0; width: 100%; }
-.client .left { background: #bedbed; display: block; float: left; height: 100px; margin: 0 8px; width: 150px; }
-.client .middle { background: #f3f3f3; display: block; height: 100px; overflow: hidden; text-align: left; }
-.client .right { background: #e0dfdf; display: block; float: left; height: 100px; margin: 0 8px 0 0; width: 150px; }
+.client .overview { background: #e2eff7; float: left; margin: 0 16px 0 0; padding: 8px; width: 170px; }
+.client .collection { background: #f4f4f4; border: 1px solid #dddddd; overflow: hidden; }
+.client .collection .partial { background: #fff; border: 1px solid #e5e5e5; margin: 8px; overflow: hidden; }
+.client .collection .partial .info { background: #f9f9f9; float: left; min-height: 50px; margin: 0 8px 0 0; padding: 8px; width: 170px; }
+.client .collection .partial .graph { float: left; height: 228px; margin: 24px; padding: 16px 8px 16px 0; width: 500px; }
 
-.graph { float: left; }
+.overview .name { color: #2f73a3; font-weight: bold; margin: 0 0 4px 2px; }
+.overview .key { color: #96bace; }
+
+.collection .name { color: #868080; font-weight: bold; margin: 0 0 4px 2px; }
+.collection .key { color: #c2c0c0; }
+
+table.hash { margin: 0; padding: 0; width: 100%; }
+table.hash td.key { font-weight: bold; width: 50%; }
+table.hash td.value { text-align: right; width: 50%; }
+table.hash td.fullvalue { text-align: right; width: 100%; }
